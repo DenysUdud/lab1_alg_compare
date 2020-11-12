@@ -28,7 +28,7 @@ public class Main {
             // make 5 iterations
             for (int i=0; i<5; ++i) {
                 // CHANGE THERE POWER AND TYPE
-                ArrayList<Integer> arr = ArrayGenerator.random123(15);
+                ArrayList<Integer> arr = ArrayGenerator.random(15);
 
                 // Selection sort
                 ArrayList<Integer> arrCopy = (ArrayList<Integer>) arr.clone();
@@ -72,7 +72,7 @@ public class Main {
                 numShell[i] = numComp;
             }
             // CHANGE THERE
-            System.out.println("Random power 7");
+            System.out.println("Random array power 15");
             System.out.println("Selection sort");
             String output1 =  String.format("Average time: %f", average(timesSelection));
             String output2 =  String.format("Average num of comparisons: %f", average(numSelection));
